@@ -114,4 +114,4 @@ def main(output_path):
 if __name__ == "__main__":
     output_path = sys.argv[1]
 
-    main(output_path )
+    main(output_path)
