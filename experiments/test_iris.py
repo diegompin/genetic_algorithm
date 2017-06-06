@@ -89,7 +89,7 @@ def main(output_path):
 
 
                 dimensions = genetic_algorithm.calculate_rule_size() * initial_number_rules
-                writer = Writer('ga_iris_%d_%d_%d_%s_%s_%.2f_%.2f_%d.with_positions' % (population_size, dimensions, initial_number_rules,
+                writer = Writer(output_path+'ga_iris_%d_%d_%d_%s_%s_%.2f_%.2f_%d.with_positions' % (population_size, dimensions, initial_number_rules,
                                                                            str.lower(selection_strategy.__class__.__name__),
                                                                            str.lower(crossover_strategy.__class__.__name__),
                                                                                         mutation_rate,
