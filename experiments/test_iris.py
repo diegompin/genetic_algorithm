@@ -19,8 +19,10 @@ from common.attribute import Attribute
 from common.attribute_converter import AttributeConverter
 from common.float_converter_2 import FloatConverter2
 
+import sys
 
-def run():
+
+def main(output_path):
 
     print("\r\n\r\n\r\n")
     print("######## Experiment: testIris ########")
@@ -106,3 +108,10 @@ def run():
                 print(genetic_algorithm.get_best_individual().print_individual())
                 print("Accuracy Training Set: " + str(accuracy_training_set))
                 print("Accuracy Test Set: " + str(accuracy_test_set))
+
+
+
+if __name__ == "__main__":
+    output_path = sys.argv[1]
+
+    main(output_path )
