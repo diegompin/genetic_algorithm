@@ -6,7 +6,7 @@ from common.attribute import Attribute
 
 class SetReader:
 
-    PATH = "../data_files/"
+    PATH = "data_files/"
     CONTINUOUS = "continuous"
 
     def __init__(self, name):
